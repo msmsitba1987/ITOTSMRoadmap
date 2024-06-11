@@ -156,7 +156,7 @@ function submitFeedback() {
   const feedbackString = JSON.stringify(feedbackData) + '\n';
 
   // Make a request to append the feedback to the file using the GitHub API
-  fetch('https://api.github.com/repos/msmsitba1987/ITOTSMRoadmap/With_Feedback/feedback.txt', {
+  fetch('https://api.github.com/repos/msmsitba1987/ITOTSMRoadmap/contents/feedback.txt', {
     method: 'PUT',
     headers: {
       'Authorization': 'Bearer your-github-token',
