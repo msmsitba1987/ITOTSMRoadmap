@@ -159,7 +159,7 @@ function submitFeedback() {
   fetch('https://api.github.com/repos/msmsitba1987/ITOTSMRoadmap/contents/feedback.txt', {
     method: 'PUT',
     headers: {
-      'Authorization': 'Bearer your-github-token',
+      'Authorization': 'Bearer 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',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
