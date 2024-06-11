@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT/OT SM Roadmap</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>IT/OT SM Roadmap</h1>
+  </header>
+  
+  <main>
+    <h2>Project Details</h2>
+    <form id="project-details-form">
+      <section id="project-details">
+        <div class="sub-section">
+          <h3>Site & Geography</h3>
+          <div class="form-group">
+            <label for="region">Region:</label>
+            <div class="field-container">
+              <select id="region" name="region" required>
+                <option value="">Select a region</option>
+              </select>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <div class="field-container">
+              <select id="country" name="country" required>
+                <option value="">Select a country</option>
+              </select>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="site-name">Site Name:</label>
+            <div class="field-container">
+              <select id="site-name" name="site-name" required>
+                <option value="">Select a site</option>
+              </select>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="site-code">Site Code:</label>
+            <div class="field-container">
+              <input type="text" id="site-code" name="site-code" readonly>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-section">
+          <h3>Initiative Driver</h3>
+          <div class="form-group">
+            <label for="initiative-driver">Initiative Driver:</label>
+            <div class="field-container">
+              <select id="initiative-driver" name="initiative-driver" required>
+                <option value="">Select an option</option>
+                <option value="Business">Business</option>
+                <option value="Sector IT">Sector IT</option>
+                <option value="EF">EF</option>
+                <option value="Sector OT">Sector OT</option>
+              </select>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-section">
+          <h3>Implementation Stream/ Program Category</h3>
+          <div class="form-group">
+            <label for="program-category">Program Category:</label>
+            <div class="field-container">
+              <select id="program-category" name="program-category" required>
+                <option value="">Select a category</option>
+                <option value="01-Digital Plant">01-Digital Plant</option>
+                <option value="02-Digital Lab">02-Digital Lab</option>
+                <option value="03-IT/OT Smart manufactoring">03-IT/OT Smart manufacturing</option>
+                <option value="04-Site IT Modernization">04-Site IT Modernization</option>
+                <option value="05-SC_Planning_PM_EHS">05-SC_Planning_PM_EHS</option>
+                <option value="06-SC-D Integration">06-SC-D Integration</option>
+                <option value="07-Quality & Regulatory">07-Quality & Regulatory</option>
+                <option value="Business Demand">Business Demand</option>
+                <option value="IT-I Core">IT-I Core</option>
+              </select>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-section">
+          <h3>Sector and Business Domain</h3>
+          <div class="form-group">
+            <label for="sector">Sector:</label>
+            <div class="field-container">
+              <select id="sector" name="sector" required>
+                <option value="">Select a sector</option>
+                <option value="Life Science">Life Science</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Healthcare">Healthcare</option>
+              </select>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="business-field">Business Domain/Business Field:</label>
+            <div class="field-container">
+              <input type="text" id="business-field" name="business-field" readonly>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <h3>Current Status</h3>
+          <div class="form-group">
+            <label for="current-status">Current Status:</label>
+            <div class="field-container">
+              <select id="current-status" name="current-status" required>
+                <option value="">Select a status</option>
+                <option value="Yet to Start">Yet to Start</option>
+                <option value="Ongoing">Ongoing</option>
+                <option value="Completed">Completed</option>
+                <option value="At-Risk">At-Risk</option>
+              </select>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-section">
+          <h3>Project Title</h3>
+          <div class="form-group">
+            <label for="project-title">Project Title:</label>
+            <div class="field-container">
+              <input type="text" id="project-title" name="project-title" required>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-section">
+          <h3>Short Description</h3>
+          <div class="form-group">
+            <label for="short-description">Short Description:</label>
+            <div class="field-container">
+              <input type="text" id="short-description" name="short-description" required>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-section">
+          <h3>Project Linkages</h3>
+          <div class="form-group">
+            <label for="sub-project">Sub-Project/Task:</label>
+            <div class="field-container">
+              <input type="text" id="sub-project" name="sub-project">
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dependencies">Dependencies:</label>
+            <div class="field-container">
+              <input type="text" id="dependencies" name="dependencies">
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="related-projects">Related Projects:</label>
+            <div class="field-container">
+              <input type="text" id="related-projects" name="related-projects">
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-section">
+          <h3>Roadmap Owner</h3>
+          <div class="form-group">
+            <label for="roadmap-owner">Roadmap Owner:</label>
+            <div class="field-container">
+              <input type="text" id="roadmap-owner" name="roadmap-owner" value="Mohit Singh" readonly>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-section">
+          <h3>Smart Manufacturing Level</h3>
+          <div class="form-group">
+            <label for="sm-level">Smart Manufacturing Level:</label>
+            <div class="field-container">
+              <select id="sm-level" name="sm-level" required>
+                <option value="">Select a level</option>
+                <option value="Negligible">Negligible</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+              <button type="button" class="feedback-button">Feedback</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <button type="button" class="general-feedback-button bottom-right">General Feedback</button>
+
+  <div id="feedback-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Feedback</h3>
+      <textarea id="feedback-input" rows="4" cols="50"></textarea>
+      <button id="submit-feedback">Submit</button>
+    </div>
+  </div>
+
+  <div id="stored-data-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
