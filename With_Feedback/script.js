@@ -153,15 +153,31 @@ function submitFeedback() {
     timestamp: timestamp
   };
 
-  // Store the feedback data in local storage
-  localStorage.setItem('feedback', JSON.stringify(feedbackData));
+  const feedbackString = JSON.stringify(feedbackData) + '\n';
 
-  // Clear the input and close the modal
-  feedbackInput.value = '';
-  closeModal();
-
-  // Display the stored feedback
-  displayStoredFeedback();
+  // Make a request to append the feedback to the file using the GitHub API
+  fetch('https://api.github.com/repos/your-username/your-repository/contents/feedback.txt', {
+    method: 'PUT',
+    headers: {
+      'Authorization': 'Bearer your-github-token',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      message: 'Append feedback',
+      content: btoa(feedbackString),
+      sha: 'file-sha'
+    })
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Feedback stored successfully:', data);
+      // Clear the input field and close the modal
+      feedbackInput.value = '';
+      closeModal();
+    })
+    .catch(error => {
+      console.error('Error storing feedback:', error);
+    });
 }
 
 // Function to display the stored feedback
